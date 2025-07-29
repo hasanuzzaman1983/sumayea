@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <h1>Different froms</h1>
+    <p>personal form</p>
+    <form>
+        <label>Name</label><br>
+        <input type="text" id="name"><br><br>
+        <label>Email ID</label><br>
+        <input type="text" id="name"><br><br>
+        <label>Contact Number (This will be hidden)</label><br>
+        <input type="password" id="Contact"><br><br>
+        <label>Gender</label><br>
+        <input type="radio" id="female" name="Gender" value="Female">Female<br>
+        <input type="radio" id="male" name="Gender" value="Male">Male<br><br>
+        <input type=" checkbox" id="city" value="dhaka">Dhaka<br>
+        <input type="checkbox" id="city" value="sylhet">Sylhet<br><br>
+        <input type="submit">
+
+    </form><br><br>
+
+
+    <form>
+        <fieldset>
+            <!--the fieldset tag is used to group relate element in froms and box around them-->
+            <legend>personal Information</legend>
+
+            <label>Full name</label>
+            <!--placeholder attribute can be used to provide extra information about entry to be made-->
+            <input type="text" id="fname" placeholder="Enter Name"><br><br>
+            <label>Email:</label>
+            <input type="text" id="Email"><br>
+            <br>
+            <label>Gender</label><br>
+            <input type="radio" id="Gender" value="female">female<br>
+            <input type="radio" id="gender" value="male">Male<br><br>
+            <label>Birthday</label>
+            <input type="date" id="Birthday" name="birthday"><br><br>
+
+        </fieldset>
+    </form><br><br>
+
+    <fieldset>
+        <legend><b>Enter your marks</b></legend>
+        <form action="/action_page.php" oninput="x.value=(parseInt(m1.value)+parseInt(m2.value)+parseInt(m3.value))/3">
+
+            <label>name</label><br>
+            <input type="text " id="name"><br><br>
+            <label>Enter Marks</label><br>
+            <select name="subject" id="subject">
+                <option value="Maths">Maths</option>
+                <option value="English">English</option>
+                <option value="Science">Science</option>
+            </select>
+            <input type="subject2" id="m1" name="m1"><br>
+            <br>
+            <select name="subject2" id="subject2">
+                <option value="Maths">Maths</option>
+                <option value="English">English</option>
+                <option value="Science">Science</option>
+            </select>
+            <input type="number" id="m2"><br>
+
+            <br>
+            <select name="subject3" id="subject3">
+                <option value="Maths">Maths</option>
+                <option value="English">English</option>
+                <option value="Science">Science</option>
+            </select>
+            <input type="number" id="m3"><br>
+            <br>
+            Average:<output name="x" for="m1 m2 m3"></output>
+        </form>
+    </fieldset>
+</body>
+
+</html>
