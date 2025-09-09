@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="uft-8">
+  <meta name="viewport" content="width=device-widht,initial scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+  </script>
+
+</head>
+
+<body>
+  <div class="container">
+    <h2>carousel example</h2>
+    <div id="mycarousel" class="carrousel slide" data-ride="carrousel">
+      <!--Indicators-->
+      <ol class="carousel-indicators">
+        <li data-target="mycarousel" data-slide-to="0" class="active"></li>
+        <li data-target="mycarousel" data-slide-to="1">
+        <li data-target="mycarousel" data-slide-to="2"></li>
+
+      </ol>
+      <!--Wrapper for slides-->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="pic.jpg" alt="image 1">
+        </div>
+        <div class="item">
+          <img src="pic1.jpg" alt="Image 2">
+        </div>
+
+        <div class="item">
+          <img src="pic2.jpg" alt="penguin">
+        </div>
+      </div>
+      <!--Left and right controls-->
+      <a class="left carousel-control" href="" data-slide="prev">
+        <span class="glyphicon-chevron-left"></span>
+        <span class="sr-only">previously</span>
+      </a>
+      <a class="right carousel-control" href="#mycarousel" data-slide="next">
+        <span class="glyphicon-chevron-right"></span>
+        <span class="sr-only">next</span>
+        </span>
+      </a>
+    </div>
+  </div>
+</body>
+
+</html>
