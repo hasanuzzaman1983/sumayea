@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>JavaScript Array</h2>
+    <h2>join()and pop</h2>
+
+    <p id="myjoin"></p>
+    <p id="myfirstpop"></p>
+    <p id="mysecondpop"></p>
+
+    <script>
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+        document.getElementById("myjoin").innerHTML = fruits.join(" * ");
+        document.getElementById("myfirstpop").innerHTML = fruits.join(",");
+        fruits.pop();
+        document.getElementById("mysecondpop").innerHTML = fruits.join(",")
+    </script>
+</body>
+
+</html>
