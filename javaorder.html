@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h2>JavaScript class inheritance</h2>
+    <p>Use the "extends" keywords to inherit all methgods from another class</p>
+    <p>use the "super" method to call the parents constructor function</p>
+    <p id="datiels"></p>
+    <script>
+        class car {
+            constructor(brand) {
+                this.carname = brand;
+            }
+
+            present() {
+                return 'I have a' + this.carname;
+            }
+        }
+        class Model extends Car {
+            constructor(brand, mod) {
+                super(brand);
+                this.model = mod;
+            }
+            show() {
+                return this.present() + ', it is a' + this.model;
+            }
+        }
+        let myCar = new Model("ford", "Mustang");
+        document.getElementById("details").innerHTML = myCar.show();
+    </script>
+</body>
+
+</html>
