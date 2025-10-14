@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <p>Click the button to evalute / execute javaScript</p>
+    <button onclick="myFunction()">Try it</button>
+    <p id="result"></p>
+
+    <script>
+        function myFunction() {
+            var x = 10;
+            var y = 20;
+            var a = eval("x + y") + "<br>";
+            var b = eval("3 * 3") + "<br>";
+            var c = eval("y - x") + "<br>";
+
+            var res = a + b + c;// concatenates the string
+            document.getElementById("result").innerHTML = res;
+        }
+    </script>
+
+</body>
+
+</html>
